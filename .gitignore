@@ -1,0 +1,70 @@
+### Log ###
+*.log
+logs/
+*.logs
+
+### Build ###
+target/
+build/
+out/
+bin/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+### IDE system files ###
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.settings/
+.classpath
+.project
+.metadata/
+
+# NetBeans
+nbproject/
+nb-configuration.xml
+
+# VS Code
+.vscode/
+
+### OS system files ###
+# Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+### Temporary files ###
+*.tmp
+*.temp
+*.swp
+*.swo
+
+### Environment files and directories ###
+.env
+.env/
+.venv
+.venv/
+env
+env/
+venv
+venv/
+*.properties.local
+
+### Documentation ###
+*.docx
+*.pdf
