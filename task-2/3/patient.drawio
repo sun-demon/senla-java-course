@@ -1,0 +1,55 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Страница — 1" id="XPojqk11kh-hMMRPMYDt">
+    <mxGraphModel dx="280" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mCPtaFAOJ0TVO9XsCDUP-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;«abstract&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;»&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;Person&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;- id: String&lt;br&gt;- firstName: String&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;- lastName: String&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;- dateOfBirth: Date&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;- gender: Gender&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;- phoneNumber: String&lt;/font&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;+ getFullName(): String&lt;br&gt;+ calculateAge(): int&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#0000FF;" parent="1" vertex="1">
+          <mxGeometry x="340" y="290" width="190" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="mCPtaFAOJ0TVO9XsCDUP-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;Patient&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;- patientId: String&lt;br&gt;- bloodType: BloodType&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;- allergies: List&amp;lt;String&amp;gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;+ getFullName(): String&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;+ calculateAge(): int&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;+ addAllergy(String)&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#009900;" parent="1" vertex="1">
+          <mxGeometry x="490" y="590" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="mCPtaFAOJ0TVO9XsCDUP-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;«enumeration&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;»&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;Gender&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;&amp;nbsp;MALE&lt;br&gt;&amp;nbsp;FEMALE&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;&amp;nbsp;OTHER&lt;/font&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="580" y="325" width="90" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mCPtaFAOJ0TVO9XsCDUP-5" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" parent="1" source="mCPtaFAOJ0TVO9XsCDUP-4" target="mCPtaFAOJ0TVO9XsCDUP-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="470" y="570" as="sourcePoint" />
+            <mxPoint x="630" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mCPtaFAOJ0TVO9XsCDUP-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;«enumeration&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;»&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;BloodType&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;&amp;nbsp;A_POSITIVE&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;&amp;nbsp;A_NEGATIVE&lt;br&gt;&amp;nbsp;B_POSITIVE&lt;br&gt;&amp;nbsp;B_NEGATIVE&lt;br&gt;&amp;nbsp;AB_POSITIVE&lt;br&gt;&amp;nbsp;AB_NEGATIVE&lt;br&gt;&amp;nbsp;O_POSITIVE&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;&amp;nbsp;O_NEGATIVE&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;&amp;nbsp;UNKNOWN&lt;/font&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="680" y="565" width="90" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="mCPtaFAOJ0TVO9XsCDUP-7" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" parent="1" source="mCPtaFAOJ0TVO9XsCDUP-6" target="mCPtaFAOJ0TVO9XsCDUP-3" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="740" y="900" as="sourcePoint" />
+            <mxPoint x="900" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mCPtaFAOJ0TVO9XsCDUP-8" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" parent="1" source="mCPtaFAOJ0TVO9XsCDUP-3" target="mCPtaFAOJ0TVO9XsCDUP-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="570" as="sourcePoint" />
+            <mxPoint x="610" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mCPtaFAOJ0TVO9XsCDUP-9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;Doctor&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;- doctorId: String&lt;br&gt;- specialization: String&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;- licenseNumber: String&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;+ getFullName(): String&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;+ calculateAge(): int&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 153, 0);&quot;&gt;+ examinePatient(patient: Patient):String&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#009900;" parent="1" vertex="1">
+          <mxGeometry x="200" y="590" width="230" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="mCPtaFAOJ0TVO9XsCDUP-10" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" parent="1" source="mCPtaFAOJ0TVO9XsCDUP-9" target="mCPtaFAOJ0TVO9XsCDUP-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="360" y="570" as="sourcePoint" />
+            <mxPoint x="520" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mCPtaFAOJ0TVO9XsCDUP-11" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" source="mCPtaFAOJ0TVO9XsCDUP-9" target="mCPtaFAOJ0TVO9XsCDUP-3" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="340" y="580" as="sourcePoint" />
+            <mxPoint x="500" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
