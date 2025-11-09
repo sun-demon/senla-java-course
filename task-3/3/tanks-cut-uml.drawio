@@ -1,0 +1,68 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Страница — 1" id="XPojqk11kh-hMMRPMYDt">
+    <mxGraphModel dx="3111" dy="2096" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="S4wdt5YliR7kEv1zfu42-17" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font style=&quot;color: rgb(153, 51, 255);&quot;&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;«interface&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;»&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font color=&quot;#9933ff&quot;&gt;&lt;b&gt;IAssemblyLIne&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(153, 51, 255);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;color: rgb(153, 51, 255); background-color: transparent;&quot;&gt;+ assembleProduct(Product): IProduct&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#9933FF;" parent="1" vertex="1">
+          <mxGeometry x="-2130" y="-1110" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Dnjg_eEgvpMpPlH67Op9-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font style=&quot;color: rgb(153, 51, 255);&quot;&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;«interface&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;»&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font color=&quot;#9933ff&quot;&gt;&lt;b&gt;IProduct&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(153, 51, 255);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;color: rgb(153, 51, 255); background-color: transparent;&quot;&gt;+ installFirstPart(IProductPart)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;color: rgb(153, 51, 255); background-color: transparent;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;color: rgb(153, 51, 255); background-color: transparent;&quot;&gt;+ installSecondPart(IProductPart)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;color: rgb(153, 51, 255); background-color: transparent;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;color: rgb(153, 51, 255); background-color: transparent;&quot;&gt;+ installThirdPart(IProductPart)&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(153, 51, 255); background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#9933FF;" vertex="1" parent="1">
+          <mxGeometry x="-1955" y="-980" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Dnjg_eEgvpMpPlH67Op9-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font style=&quot;color: rgb(153, 51, 255);&quot;&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;«interface&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;»&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font color=&quot;#9933ff&quot;&gt;&lt;b&gt;IProductPart&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(153, 51, 255);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#9933FF;" vertex="1" parent="1">
+          <mxGeometry x="-2072" y="-840" width="95" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Dnjg_eEgvpMpPlH67Op9-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font style=&quot;color: rgb(153, 51, 255);&quot;&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;«interface&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;»&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font color=&quot;#9933ff&quot;&gt;&lt;b&gt;ILineStep&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;color: rgb(153, 51, 255);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;color: rgb(153, 51, 255); background-color: transparent;&quot;&gt;+ buildProductPart(): IProductPart&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#9933FF;" vertex="1" parent="1">
+          <mxGeometry x="-2280" y="-965" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Dnjg_eEgvpMpPlH67Op9-4" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Dnjg_eEgvpMpPlH67Op9-3" target="S4wdt5YliR7kEv1zfu42-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1910" y="-640" as="sourcePoint" />
+            <mxPoint x="-1750" y="-640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dnjg_eEgvpMpPlH67Op9-12" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Dnjg_eEgvpMpPlH67Op9-4">
+          <mxGeometry x="-0.7667" relative="1" as="geometry">
+            <mxPoint x="-15" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dnjg_eEgvpMpPlH67Op9-5" value="assembleProduct" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="S4wdt5YliR7kEv1zfu42-17" target="Dnjg_eEgvpMpPlH67Op9-1">
+          <mxGeometry x="-0.1031" width="160" relative="1" as="geometry">
+            <mxPoint x="-1880" y="-860" as="sourcePoint" />
+            <mxPoint x="-1720" y="-860" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dnjg_eEgvpMpPlH67Op9-8" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="Dnjg_eEgvpMpPlH67Op9-2" target="Dnjg_eEgvpMpPlH67Op9-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-2110" y="-750" as="sourcePoint" />
+            <mxPoint x="-1950" y="-750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dnjg_eEgvpMpPlH67Op9-10" value="3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Dnjg_eEgvpMpPlH67Op9-8">
+          <mxGeometry x="-0.5616" y="2" relative="1" as="geometry">
+            <mxPoint x="-33" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dnjg_eEgvpMpPlH67Op9-9" value="buildProductPart" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="Dnjg_eEgvpMpPlH67Op9-3" target="Dnjg_eEgvpMpPlH67Op9-2">
+          <mxGeometry x="-0.235" width="160" relative="1" as="geometry">
+            <mxPoint x="-2110" y="-750" as="sourcePoint" />
+            <mxPoint x="-1950" y="-750" as="targetPoint" />
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dnjg_eEgvpMpPlH67Op9-11" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-1829" y="-844" as="geometry">
+            <mxPoint x="2" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dnjg_eEgvpMpPlH67Op9-13" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-2146" y="-1070" as="geometry">
+            <mxPoint y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
