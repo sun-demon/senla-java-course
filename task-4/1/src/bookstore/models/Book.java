@@ -36,7 +36,6 @@ public class Book {
         return price;
     }
 
-    // Геттеры
     public String getId() { return id; }
     public String getTitle() { return title; }
     public String getAuthor() { return author; }
@@ -47,7 +46,6 @@ public class Book {
     public LocalDate getArrivalDate() { return arrivalDate; }
     public String getDescription() { return description; }
 
-    // Сеттеры
     public void setPrice(double price) {
         this.price = validatePrice(price);
     }
@@ -75,6 +73,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return String.format("%s - %s ($%.2f) [%s]", title, author, price, status);
+        return String.format("Book{id='%s', title='%s', author='%s', price=%.2f, status=%s}",
+                id, title, author, price, status);
     }
 }

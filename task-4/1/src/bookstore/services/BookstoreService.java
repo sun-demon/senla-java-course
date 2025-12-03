@@ -38,7 +38,7 @@ public class BookstoreService {
         }
     }
 
-    // Основные функции из ТЗ
+    // Main functions from the TOR
 
     public boolean writeOffBook(String bookId) {
         Book book = books.get(bookId);
@@ -107,20 +107,91 @@ public class BookstoreService {
         return true;
     }
 
-    public boolean addBookToStock(String bookId) {
+    // A method for adding an existing book to a warehouse
+    public boolean addExistingBookToStock(String bookId) {
         Book book = books.get(bookId);
-        if (book != null) {
-            book.setStatus(BookStatus.AVAILABLE);
-            book.setArrivalDate(LocalDate.now());
-
-            // Закрываем все запросы на эту книгу
-            bookRequests.values().removeIf(request -> request.getBookId().equals(bookId));
-
-            System.out.println("Book '" + book.getTitle() + "' added to stock");
-            return true;
+        if (book == null) {
+            System.out.println("Book with ID '" + bookId + "' not found");
+            return false;
         }
-        System.out.println("Failed to add book to stock: " + bookId);
-        return false;
+
+        if (book.getStatus() == BookStatus.AVAILABLE) {
+            System.out.println("Book '" + book.getTitle() + "' is already in stock");
+            return false;
+        }
+
+        book.setStatus(BookStatus.AVAILABLE);
+        book.setArrivalDate(LocalDate.now());
+
+        // Close all requests for this book
+        int closedRequests = 0;
+        for (BookRequest request : bookRequests.values()) {
+            if (request.getBookId().equals(bookId)) {
+                closedRequests++;
+            }
+        }
+        bookRequests.values().removeIf(request -> request.getBookId().equals(bookId));
+
+        System.out.println("Book '" + book.getTitle() + "' added to stock. Closed " + closedRequests + " requests.");
+        return true;
+    }
+
+    public String addNewBookToStock(String title, String author, String isbn, LocalDate publicationDate, double price,
+                                     String description) {
+
+        // Generate new ID (B001, B002, ...)
+        String bookId = generateBookId();
+
+        try {
+            Book newBook = new Book(
+                    bookId,
+                    Objects.requireNonNull(title, "Title cannot be null"),
+                    Objects.requireNonNull(author, "Author cannot be null"),
+                    Objects.requireNonNull(isbn, "ISBN cannot be null"),
+                    Objects.requireNonNull(publicationDate, "Publication date cannot be null"),
+                    validatePrice(price),
+                    BookStatus.AVAILABLE,
+                    LocalDate.now(),
+                    Objects.requireNonNull(description, "Description cannot be null")
+            );
+
+            books.put(bookId, newBook);
+
+            System.out.println("New book '" + title + "' added to stock with ID: " + bookId);
+            return bookId;
+
+        } catch (IllegalArgumentException e) {
+            System.out.println("Failed to add new book: " + e.getMessage());
+            return null;
+        }
+    }
+
+    private double validatePrice(double price) {
+        if (price <= 0) {
+            throw new IllegalArgumentException("Price must be positive");
+        }
+        return price;
+    }
+
+    private String generateBookId() {
+        int maxNumber = 0;
+
+        // We find the maximum number among the existing IDs in the format B001, B002, ...
+        for (String id : books.keySet()) {
+            if (id.matches("B\\d+")) {
+                try {
+                    int number = Integer.parseInt(id.substring(1));
+                    if (number > maxNumber) {
+                        maxNumber = number;
+                    }
+                } catch (NumberFormatException e) {
+                    // Ignoring IDs that do not match the format
+                }
+            }
+        }
+
+        // Generate next ID
+        return String.format("B%03d", maxNumber + 1);
     }
 
     public BookRequest createBookRequest(String bookId, String customerEmail) {
@@ -138,12 +209,12 @@ public class BookstoreService {
         return null;
     }
 
-    // Дополнительные функции для просмотра
+    // Additional functions for view
 
     public List<Book> getBooksSorted(String sortBy) {
         List<Book> bookList = new ArrayList<>(books.values());
 
-        // Нормализуем параметр: удаляем пробелы, приводим к нижнему регистру
+        // Normalize the parameter: remove spaces, reduce to lowercase
         String normalizedSortBy = sortBy.toLowerCase().replaceAll("\\s+", "");
 
         switch (normalizedSortBy) {
@@ -160,7 +231,7 @@ public class BookstoreService {
                 bookList.sort(Comparator.comparing(b -> b.getStatus().name()));
                 break;
             default:
-                // По умолчанию сортируем по названию
+                // By default, we sort by name.
                 bookList.sort(Comparator.comparing(Book::getTitle));
                 System.out.println("Unknown sort parameter: '" + sortBy + "'. Sorting by title.");
                 break;
@@ -187,7 +258,7 @@ public class BookstoreService {
                 orderList.sort(Comparator.comparing(order -> order.getStatus().name()));
                 break;
             default:
-                // По умолчанию сортируем по дате заказа
+                // By default, we sort by order date.
                 orderList.sort(Comparator.comparing(Order::getOrderDate));
                 System.out.println("Unknown sort parameter: '" + sortBy + "'. Sorting by order date.");
                 break;
@@ -196,9 +267,9 @@ public class BookstoreService {
         return orderList;
     }
 
-    // Список запросов на книгу (сортировать по количеству запросов, алфавиту)
+    // List of book requests (sort by number of requests, alphabetically)
     public List<Map<String, Object>> getBookRequestsSorted(String sortBy) {
-        // Группируем запросы по книге
+        // Grouping queries by book
         Map<String, Long> requestCounts = bookRequests.values().stream()
                 .collect(Collectors.groupingBy(
                         BookRequest::getBookId,
@@ -233,7 +304,7 @@ public class BookstoreService {
         return result;
     }
 
-    // Список выполненных заказов за период времени (сортировать по дате, цене)
+    // List of completed orders over a period of time (sort by date, price)
     public List<Order> getCompletedOrdersForPeriod(LocalDateTime start, LocalDateTime end,
                                                    String sortBy) {
         List<Order> completedOrders = orders.values().stream()
@@ -254,14 +325,14 @@ public class BookstoreService {
         return completedOrders;
     }
 
-    // Сумму заработанных средств за период времени
+    // The amount of money earned over a period of time
     public double getRevenueForPeriod(LocalDateTime start, LocalDateTime end) {
         return getCompletedOrdersForPeriod(start, end, "date").stream()
                 .mapToDouble(Order::getTotalAmount)
                 .sum();
     }
 
-    // Количество выполненных заказов за период времени
+    // The number of completed orders over a period of time
     public int getCompletedOrdersCountForPeriod(LocalDateTime start, LocalDateTime end) {
         return getCompletedOrdersForPeriod(start, end, "date").size();
     }
@@ -292,7 +363,7 @@ public class BookstoreService {
                 unsoldBooks.sort(Comparator.comparing(Book::getPrice));
                 break;
             default:
-                // По умолчанию сортируем по дате поступления
+                // By default, we sort by receipt date.
                 unsoldBooks.sort(Comparator.comparing(Book::getArrivalDate));
                 break;
         }
@@ -329,7 +400,7 @@ public class BookstoreService {
         return book != null ? book.getDescription() : "Book not found";
     }
 
-    // Вспомогательные методы
+    // Auxiliary methods
 
     public Book getBook(String bookId) {
         return books.get(bookId);

@@ -42,7 +42,7 @@ public class BookstoreTest {
 
         // 1.3 Add book back to stock
         System.out.println("\n1.3 Adding book B001 back to stock:");
-        boolean added = service.addBookToStock("B001");
+        boolean added = service.addExistingBookToStock("B001");
         System.out.println("Result: " + (added ? "SUCCESS" : "FAILED"));
 
         // 1.4 Book sorting
@@ -133,7 +133,7 @@ public class BookstoreTest {
 
         // 3.3 Add book to stock and check requests
         System.out.println("\n3.3 Adding book B005 to stock:");
-        service.addBookToStock("B005");
+        service.addExistingBookToStock("B005");
 
         // 3.4 Check that requests are cleared
         System.out.println("Active requests after adding to stock: " +
@@ -230,7 +230,7 @@ public class BookstoreTest {
 
         // 5.5 Add non-existent book to stock
         System.out.println("\n5.5 Adding non-existent book to stock:");
-        boolean added = service.addBookToStock("NONEXISTENT");
+        boolean added = service.addExistingBookToStock("NONEXISTENT");
         System.out.println("Result: " + (added ? "SUCCESS (UNEXPECTED)" : "FAILED (EXPECTED)"));
 
         // 5.6 Create request for available book
